@@ -1,4 +1,4 @@
-import Btn from './Button'
+import Btn from './Button_props'
 
 function App() {
   return (
