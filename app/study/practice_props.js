@@ -1,4 +1,4 @@
-import Btn from '../study/Button'
+import Btn from './Button'
 
 function App() {
   return (
