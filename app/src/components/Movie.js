@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import styled from "styled-components";
 
 function Movie({id, coverImg, title, summary, genres}) {
-    return <div>
+    return <MovieContainer>
     <img src={coverImg} alt={`${title}poster`}/>
-    <h1><Link to ={`/movie/${id}`}>{title}</Link></h1>
-    <p>{summary}</p>
+    <p><Link to ={`/movie/${id}`}>{title}</Link></p>
+    {/* <p>{summary}</p>
     <ul>
       {genres.map(genre => <li key={genre}>{genre}</li>)}
-    </ul>
-  </div>
+    </ul> */}
+  </MovieContainer>
 }
 
 Movie.propTypes = {
@@ -19,5 +20,18 @@ Movie.propTypes = {
   summary: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
+
+const MovieContainer = styled.div`
+  a{
+    text-decoration:none;
+    color: #000;
+    font-weight: 700;
+  }
+  p{
+    text-align: center;
+  }
+
+  padding: 20px
+`
 
 export default Movie;
