@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/moive-web-clone-coding/static/css/main.6c64b6ec.css",
+    "main.js": "/moive-web-clone-coding/static/js/main.71dc50de.js",
+    "static/media/slick.svg": "/moive-web-clone-coding/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/moive-web-clone-coding/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/moive-web-clone-coding/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/moive-web-clone-coding/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/moive-web-clone-coding/index.html",
+    "main.6c64b6ec.css.map": "/moive-web-clone-coding/static/css/main.6c64b6ec.css.map",
+    "main.71dc50de.js.map": "/moive-web-clone-coding/static/js/main.71dc50de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c64b6ec.css",
+    "static/js/main.71dc50de.js"
+  ]
+}
