@@ -4,15 +4,15 @@ const navList = [{
 },
 {
     title: "Drama",
-    path: "genres=Drama"
+    path: "genre=Drama"
 },
 {
     title: "Action",
-    path: "genres=Action"
+    path: "genre=Action"
 },
 {
     title: "Comedy",
-    path: "genres=Comedy"
+    path: "genre=Comedy"
 }]
 
 export default navList

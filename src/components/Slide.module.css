@@ -1,0 +1,11 @@
+.movieContainer {
+    position: relative;
+}
+
+.slider {
+}
+
+.slide {
+    display: flex;
+    padding-right: 50px;
+}

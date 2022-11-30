@@ -18,6 +18,7 @@ function Detail() {
         getMovie();
     }, [id]);
 
+    console.log(movie)
     return <div>
         {loading ? "로딩중" :
          <MovieDetail
