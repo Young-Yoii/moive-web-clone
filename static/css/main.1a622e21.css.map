@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.1a622e21.css","mappings":"AAAA,6BACI,iBACJ,CAKA,qBACI,YAAa,CACb,kBACJ","sources":["components/Slide.module.css"],"sourcesContent":[".movieContainer {\r\n    position: relative;\r\n}\r\n\r\n.slider {\r\n}\r\n\r\n.slide {\r\n    display: flex;\r\n    padding-right: 50px;\r\n}"],"names":[],"sourceRoot":""}
