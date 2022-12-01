@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import Loading from '../components/Loading';
 import Header from '../components/Header';
 import GenrePage from '../components/GenrePage';
-import navList from '../navList';
 import styles from './Genre.module.css';
 
 const Genre = () => {
@@ -21,10 +20,7 @@ const Genre = () => {
             setLoading(false);
         };
         getMovie();
-    }, [detail]);
-
-    let navTitle = navList.filter(item => item.path === detail);
-    console.log(navTitle)
+    }, [detail, num]);
 
     return (<div>
         <Header />
