@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import MovieDetail from './../components/MovieDetail';
+import Loading from './../components/Loading';
+import Header  from './../components/Header';
 
 function Detail() {
     const { id } = useParams();
@@ -18,9 +20,9 @@ function Detail() {
         getMovie();
     }, [id]);
 
-    console.log(movie)
     return <div>
-        {loading ? "로딩중" :
+        <Header />
+        {loading ? <Loading /> :
          <MovieDetail
               key={movie.id}
               id={movie.id}
@@ -28,6 +30,9 @@ function Detail() {
               title={movie.title_long}
               description={movie.description_intro}
               genres={movie.genres}
+              rating={movie.rating}
+              runtime={movie.runtime}
+              background={movie.background_image}
             />}
     </div>;
   }

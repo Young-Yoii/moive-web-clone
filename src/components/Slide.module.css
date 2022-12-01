@@ -1,11 +1,43 @@
 .movieContainer {
     position: relative;
+    padding-left: 50px;
 }
 
 .slider {
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .slide {
     display: flex;
     padding-right: 50px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.slide_title {
+    padding-left: 20px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 4px 3px 4px #500089;
+}
+
+.button_container {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.button_container button {
+    border :none;
+    background-color:transparent;
+    font-size: 2rem;
+    padding: 0px 20px;
+    color:#500089;
+}
+
+.button_container button:active{
+    color:#397e81;
 }

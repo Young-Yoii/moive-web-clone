@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
-// import styled from "styled-components";
 import Slide from "../components/Slide";
 import Header from "../components/Header";
+import Loading from "../components/Loading";
 import navList from './../navList';
-import { Link } from 'react-router-dom';
 
 function Home() {
     const [loading, setLoading] = useState(true);
@@ -31,20 +30,14 @@ function Home() {
         }))
     },[])
 
-    console.log(movies)
     return (
       <div className="App">
         <Header />
-        {loading ? <h1>loding</h1> : (
+        {loading ? <Loading /> : (
         <div>
           {navList.map((item, idx) => {
             return (
-              <div>
-                <Link to={`/page/${item.path}`}>
-                  <span>{item.title}</span>
-                </Link>
-                <Slide movies={movies[idx]} />
-              </div>
+              <div><Slide movies={movies[idx]} title={item.title}/></div>
             )
           })}
         </div>)}
@@ -52,10 +45,4 @@ function Home() {
     );
   }
   
-  // const MovieContainer = styled.div`
-  //   display: flex;
-  //   flex: 1 1 auto;
-  //   overflow-x:auto;
-  // `
-
   export default Home;

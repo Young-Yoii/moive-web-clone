@@ -1,40 +1,47 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-// import styled from "styled-components";
+import styles from './Movie.module.css'
+import { useRef } from 'react';
 
-function Movie({id, coverImg, title}) {
+function Movie({id, coverImg, title, genres}) {
+    const divRef = useRef();
+
+    const mouseOverHandler = () => {
+      divRef.current.style = 'opacity : 1; transition: all 0.5s;'
+    }
+
+    const mouseOutHandler = (e) => {
+      divRef.current.style = 'opacity : 0'
+    }
+
+    if (coverImg === undefined){
+      return null;
+    }
+
     return (
-    <div>
+    <div className={styles.movie}>
+      <Link to ={`/movie/${id}`}>
       <img src={coverImg} alt={`${title}poster`}/>
-      <p><Link to ={`/movie/${id}`}>{title}</Link></p>
-      {/* <p>{summary}</p>
-      <ul>
-        {genres.map(genre => <li key={genre}>{genre}</li>)}
-      </ul> */}
+      <div className={styles.movie_info_container} ref={divRef} onMouseEnter={mouseOverHandler} onMouseLeave={mouseOutHandler}>
+        <div className={styles.movie_info}>
+          <p className={styles.movie_title}>{title}</p>
+          <ul>
+            {genres.map(genre => <li key={genre}>{genre}</li>)}
+          </ul>
+        </div>
+        <div className={styles.img_background}></div>
+      </div>
+      </Link>
     </div>
     )
 
 }
 
-// Movie.propTypes = {
-//   id: PropTypes.number.isRequired,
-//   coverImg: PropTypes.string.isRequired,
-//   title: PropTypes.string.isRequired,
-//   // summary: PropTypes.string.isRequired,
-//   // genres: PropTypes.arrayOf(PropTypes.string).isRequired,
-// }
-
-// const MovieContainer = styled.div`
-//   a{
-//     text-decoration:none;
-//     color: #000;
-//     font-weight: 700;
-//   }
-//   p{
-//     text-align: center;
-//   }
-
-//   padding: 20px
-// 
+Movie.propTypes = {
+  id: PropTypes.number.isRequired,
+  coverImg: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+}
 
 export default Movie;
