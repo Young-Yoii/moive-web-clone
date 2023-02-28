@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/moive-web-clone-coding/static/css/main.1d2446b3.css",
-    "main.js": "/moive-web-clone-coding/static/js/main.3b228169.js",
-    "index.html": "/moive-web-clone-coding/index.html",
-    "main.1d2446b3.css.map": "/moive-web-clone-coding/static/css/main.1d2446b3.css.map",
-    "main.3b228169.js.map": "/moive-web-clone-coding/static/js/main.3b228169.js.map"
+    "main.css": "/static/css/main.1d2446b3.css",
+    "main.js": "/static/js/main.06e2a613.js",
+    "index.html": "/index.html",
+    "main.1d2446b3.css.map": "/static/css/main.1d2446b3.css.map",
+    "main.06e2a613.js.map": "/static/js/main.06e2a613.js.map"
   },
   "entrypoints": [
     "static/css/main.1d2446b3.css",
-    "static/js/main.3b228169.js"
+    "static/js/main.06e2a613.js"
   ]
 }
