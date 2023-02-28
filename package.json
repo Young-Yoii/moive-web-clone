@@ -46,7 +46,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://young-yoii.github.io/moive-web-clone-coding/",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
