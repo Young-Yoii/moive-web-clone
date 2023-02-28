@@ -9,4 +9,4 @@
 - 디테일 페이지, 장르별 페이지 추가 구현<br>
 - styled-components, module.css 를 적절히 사용하여 스타일 구현<br>
 
-🚀https://young-yoii.github.io/moive-web-clone-coding/
+🚀https://young-yoii.github.io/yflix
